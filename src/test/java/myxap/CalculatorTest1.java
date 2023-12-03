@@ -11,7 +11,7 @@ class CalculatorTest1 {
     Calculator calculator = new Calculator();
 
     @ParameterizedTest
-    @CsvSource({"1,1,2","2,3,5","2,2,4"})
+    @CsvSource({"1,1,2","2,3,5","2,2,4","5,5,10"})
     public void testCalc(int a, int b, int d){
         Assertions.assertEquals(d,calculator.sum(a,b));
     }
